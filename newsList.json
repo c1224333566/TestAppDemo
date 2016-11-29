@@ -1,0 +1,21 @@
+{
+  "flag":"1",
+  "mag":"success",
+  "data":[
+    {
+      "newsId":"1001",
+      "title":"Android dvm的进程和Linux的进程，应用程序的进程是否为同一个概念？--11111",
+      "url":"detail.html"
+    },
+    {
+      "newsId":"1002",
+      "title":"Android dvm的进程和Linux的进程，应用程序的进程是否为同一个概念？--22222",
+      "url":"detail.html"
+    },
+    {
+      "newsId":"1003",
+      "title":"Android dvm的进程和Linux的进程，应用程序的进程是否为同一个概念？--33333",
+      "url":"detail.html"
+    }
+  ]
+}
