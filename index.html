@@ -1,20 +1,39 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport"content="width=device-width,initial-scale=1,user-scalable=0">
         <title>AppDemo</title>
         <link rel="stylesheet" href="weui/dist/style/weui.min.css"/>
+        <script type="text/javascript" src="js/zepto.min.js"></script>
         <style>
             html,body{
                 height: 100%;
+            }
+            img{
+                max-width:100%;
+            }
+            .text-muted{
+                color:#999;
+            }
+            .welcome{
+                position: fixed;
+                left:0;
+                top:0;
+                z-index:2;
+            }
+            .weui-progress{
+                position: fixed;
+                left:5%;
+                bottom:5%;
+                width:90%;
+                z-index:3;
             }
         </style>
     </head>
     <body>
         <!--进度条-->
-        <img src="img/welcome.jpg" class="welcome"
-        >
+        <img src="img/welcome.jpg" class="welcome"/>
         <div class="weui-progress">
             <div class="weui-progress__bar">
                 <div class="weui-progress__inner-bar" style="width:80%;"></div>
@@ -23,6 +42,43 @@
                 <i class="weui-icon-cancel"></i>
             </a>
         </div>
-        
+        <div class="weui-cells__title">用户登录</div>
+        <form action="/" method="post">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">账号</label></div>
+                <div class="weui-cell__bd">
+                    <input type="text" class="weui-input user-name" placeholder="请输入手机/用户名/邮箱">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">密码</label></div>
+                <div class="weui-cell__bd">
+                    <input type="password" class="weui-input user-name" placeholder="请输入7-18位密码">
+                </div>
+            </div>
+            <div class="weui-btn-area">
+                <input type="submit" value="登录" class="weui-btn weui-btn_primary"/>
+            </div>
+        </form>
+    <div class="weui-cells__tips"><a  href="#" class="text-muted">忘记密码</a></div>
+    <script type="text/javascript">
+        $(function () {
+            var progress = 0;
+            var $progress = $('.weui-progress__inner-bar');
+            function loading(){
+                $progress.css({
+                    width:progress + '%'
+                });
+                progress = ++progress;
+                if(progress >=98){
+                    $('.welcome, .weui-progress').fadeOut(150);
+                    $('.user-name').focus();
+                    return false;
+                }
+                setTimeout(loading, 30);
+            }
+            loading();
+        })
+    </script>
     </body>
 </html>
