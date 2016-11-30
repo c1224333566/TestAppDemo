@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>AppDemo</title>
+    <script src="//cdn.bootcss.com/vue/2.1.3/vue.common.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <h1>{{title | uppercase}}</h1>
+        <ul>
+            <li
+            v-repeat = "todos"
+            v-on = "click: done = !done"
+            class = "{{done ? 'done':''}}">
+                {{content}}
+            </li>
+        </ul>
+    </div>
+<script type="text/javascript">
+    var demo = new Vue({
+        el:'#demo',
+        data:{
+            title:'todos',
+            todos:[
+                {
+                    done:true,
+                    content:'Learn JavaScript'
+                },{
+                    done:false,
+                    content:'Learn Vue.js'
+                }
+            ]
+        }
+    })
+</script>
+</body>
+</html>
