@@ -58,8 +58,8 @@
       <file leaf-file-name="Icon.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Icon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            <state relative-caret-position="350">
+              <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -107,8 +107,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="368" />
-    <option name="y" value="63" />
+    <option name="x" value="585" />
+    <option name="y" value="30" />
     <option name="width" value="1080" />
     <option name="height" value="647" />
   </component>
@@ -240,15 +240,15 @@
       <workItem from="1480408090725" duration="2402000" />
       <workItem from="1480410848875" duration="1072000" />
       <workItem from="1480431296209" duration="1326000" />
-      <workItem from="1480516772978" duration="1124000" />
+      <workItem from="1480516772978" duration="1384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5924000" />
+    <option name="totallyTimeSpent" value="6184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="368" y="63" width="1080" height="647" extended-state="0" />
+    <frame x="585" y="30" width="1080" height="647" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17370442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -417,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Icon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="350">
+          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding />
         </state>
       </provider>
