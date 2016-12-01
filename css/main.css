@@ -5,12 +5,14 @@ body{
 #cd #left #right{
     margin:0;
     padding:0;
+
 }
 #cd{
     width:800px;
     height:400px;
     margin:0 auto;
     border:1px solid red;
+    /*background-image: url("../img/b1.jpg");*/
 }
 #left{
     width:30px;
@@ -19,7 +21,8 @@ body{
     font-size: 30px;
     color: #FFFFFF;
     cursor: pointer;
-    margin-top: 160px;
+    margin-top: -200px;
+    z-index:2;
     float: left;
     background-color: #9b9b9b;
     text-align: center;
@@ -31,19 +34,20 @@ body{
     font-size: 30px;
     color: #FFFFFF;
     cursor: pointer;
-    margin-top: 160px;
+    z-index: 2;
+    margin-top: -80px;
     float: right;
     background-color: #9b9b9b;
     text-align: center;
 }
-#pic{
+#bar{
 
 }
-#pic ul{
+#bar ul{
     margin-top: 340px;
     margin-left: 260px;;
 }
-#pic ul li{
+#bar ul li{
     float: left;
     list-style-type: none;
     width:30px;
@@ -56,4 +60,9 @@ body{
     background-color: #353535;
     margin-left: 10px;
     cursor: pointer;
+}
+#imgs{
+    float: left;
+    display: inline-block;
+    z-index: -1;
 }
